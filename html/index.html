@@ -1,0 +1,1451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--Meta-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Title-->
+  <title>Mood Calendar</title>
+
+  <!--Links-->
+  <link rel="stylesheet" href="/styles/styles.css">
+
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!--Fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Bitter&family=Goldman&family=Handjet&family=Josefin+Sans:ital,wght@1,100&family=Montserrat&family=Mulish&family=Roboto&family=Roboto+Mono&family=Sometype+Mono&family=Tilt+Prism&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="content-wrapper">
+    <!--Title Start-->
+    <div class="title-wrapper">
+      <h2>2023 mood calendar</h2>
+      <h4>~ color each day depending on what your mood was / is ~</h4>
+      <p>Select Mood:</p>
+      <div class="mood-icons">
+        <button class="moodBtn-js">
+          <i class="far fa-laugh js-icon" id="1"></i>
+        </button>
+  
+        <button class="moodBtn-js">
+          <i class="far fa-smile js-icon" id="2"></i>
+        </button>
+  
+        <button class="moodBtn-js">
+          <i class="far fa-meh js-icon" id="3"></i>
+        </button>
+  
+        <button class="moodBtn-js">
+          <i class="far fa-frown js-icon" id="4"></i>
+        </button>
+  
+        <button class="moodBtn-js">
+          <i class="far fa-sad-tear js-icon" id="5"></i>
+        </button>
+      </div>
+  
+      <p>then click on the circles below</p>
+  
+    </div>
+    
+    <!--Calendar Start-->
+    <div class="calendar-wrapper">
+      <div class="months month-1">
+        <h3 class="month-title">January</h3>
+        <div class="weekdays-container">
+          <div class="weekday">Sun</div>
+          <div class="weekday">Mon</div>
+          <div class="weekday">Tue</div>
+          <div class="weekday">Wed</div>
+          <div class="weekday">Thu</div>
+          <div class="weekday">Fri</div>
+          <div class="weekday">Sat</div>
+        </div>
+        <div class="days-container">
+          <div class="day">
+            <span class="day-circle">1</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">2</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">3</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">4</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">5</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">6</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">7</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">8</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">9</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">10</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">11</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">12</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">13</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">14</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">15</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">16</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">17</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">18</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">19</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">20</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">21</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">22</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">23</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">24</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">25</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">26</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">27</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">28</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">29</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">30</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">31</span>
+          </div>
+        </div>
+      </div> 
+      
+      <div class="months month-2">
+        <h3 class="month-title">February</h3>
+        <div class="weekdays-container">
+          <div class="weekday">Sun</div>
+          <div class="weekday">Mon</div>
+          <div class="weekday">Tue</div>
+          <div class="weekday">Wed</div>
+          <div class="weekday">Thu</div>
+          <div class="weekday">Fri</div>
+          <div class="weekday">Sat</div>
+        </div>
+        <div class="days-container">
+          <div class="day">
+            <span class="day-circle invisible-day"></span>
+          </div>
+          <div class="day">
+            <span class="day-circle invisible-day"></span>
+          </div>
+          <div class="day">
+            <span class="day-circle invisible-day"></span>
+          </div>
+          <div class="day">
+            <span class="day-circle">1</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">2</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">3</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">4</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">5</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">6</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">7</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">8</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">9</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">10</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">11</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">12</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">13</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">14</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">15</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">16</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">17</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">18</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">19</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">20</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">21</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">22</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">23</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">24</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">25</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">26</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">27</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">28</span>
+          </div>  
+        </div>
+      </div> 
+
+      <div class="months month-3">
+        <h3 class="month-title">March</h3>
+        <div class="weekdays-container">
+          <div class="weekday">Sun</div>
+          <div class="weekday">Mon</div>
+          <div class="weekday">Tue</div>
+          <div class="weekday">Wed</div>
+          <div class="weekday">Thu</div>
+          <div class="weekday">Fri</div>
+          <div class="weekday">Sat</div>
+        </div>
+        <div class="days-container">
+          <div class="day">
+            <span class="day-circle invisible-day"></span>
+          </div>
+          <div class="day">
+            <span class="day-circle invisible-day"></span>
+          </div>
+          <div class="day">
+            <span class="day-circle invisible-day"></span>
+          </div>
+          <div class="day">
+            <span class="day-circle">1</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">2</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">3</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">4</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">5</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">6</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">7</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">8</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">9</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">10</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">11</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">12</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">13</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">14</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">15</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">16</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">17</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">18</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">19</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">20</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">21</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">22</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">23</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">24</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">25</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">26</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">27</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">28</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">29</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">30</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">31</span>
+          </div>
+        </div>
+      </div> 
+
+      <div class="months month-4">
+        <h3 class="month-title">April</h3>
+        <div class="weekdays-container">
+          <div class="weekday">Sun</div>
+          <div class="weekday">Mon</div>
+          <div class="weekday">Tue</div>
+          <div class="weekday">Wed</div>
+          <div class="weekday">Thu</div>
+          <div class="weekday">Fri</div>
+          <div class="weekday">Sat</div>
+        </div>
+        <div class="days-container">
+          <div class="day">
+            <span class="day-circle invisible-day"></span>
+          </div>
+          <div class="day">
+            <span class="day-circle invisible-day"></span>
+          </div>
+          <div class="day">
+            <span class="day-circle invisible-day"></span>
+          </div>
+          <div class="day">
+            <span class="day-circle invisible-day"></span>
+          </div>
+          <div class="day">
+            <span class="day-circle invisible-day"></span>
+          </div>
+          <div class="day">
+            <span class="day-circle invisible-day"></span>
+          </div>
+          <div class="day">
+            <span class="day-circle">1</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">2</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">3</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">4</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">5</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">6</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">7</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">8</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">9</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">10</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">11</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">12</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">13</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">14</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">15</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">16</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">17</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">18</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">19</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">20</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">21</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">22</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">23</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">24</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">25</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">26</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">27</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">28</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">29</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">30</span>
+          </div>
+        </div>
+      </div> 
+
+      <div class="months month-5">
+        <h3 class="month-title">May</h3>
+        <div class="weekdays-container">
+          <div class="weekday">Sun</div>
+          <div class="weekday">Mon</div>
+          <div class="weekday">Tue</div>
+          <div class="weekday">Wed</div>
+          <div class="weekday">Thu</div>
+          <div class="weekday">Fri</div>
+          <div class="weekday">Sat</div>
+        </div>
+        <div class="days-container">
+          <div class="day">
+            <span class="day-circle invisible-day"></span>
+          </div>
+          <div class="day">
+            <span class="day-circle">1</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">2</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">3</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">4</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">5</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">6</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">7</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">8</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">9</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">10</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">11</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">12</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">13</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">14</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">15</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">16</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">17</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">18</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">19</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">20</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">21</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">22</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">23</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">24</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">25</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">26</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">27</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">28</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">29</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">30</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">31</span>
+          </div>
+        </div>
+      </div> 
+
+      <div class="months month-6">
+        <h3 class="month-title">June</h3>
+        <div class="weekdays-container">
+          <div class="weekday">Sun</div>
+          <div class="weekday">Mon</div>
+          <div class="weekday">Tue</div>
+          <div class="weekday">Wed</div>
+          <div class="weekday">Thu</div>
+          <div class="weekday">Fri</div>
+          <div class="weekday">Sat</div>
+        </div>
+        <div class="days-container">
+          <div class="day">
+            <span class="day-circle invisible-day"></span>
+          </div>
+          <div class="day">
+            <span class="day-circle invisible-day"></span>
+          </div>
+          <div class="day">
+            <span class="day-circle invisible-day"></span>
+          </div>
+          <div class="day">
+            <span class="day-circle invisible-day"></span>
+          </div>
+          <div class="day">
+            <span class="day-circle">1</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">2</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">3</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">4</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">5</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">6</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">7</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">8</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">9</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">10</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">11</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">12</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">13</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">14</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">15</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">16</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">17</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">18</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">19</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">20</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">21</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">22</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">23</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">24</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">25</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">26</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">27</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">28</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">29</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">30</span>
+          </div>
+        </div>
+      </div> 
+
+      <div class="months month-7">
+        <h3 class="month-title">July</h3>
+        <div class="weekdays-container">
+          <div class="weekday">Sun</div>
+          <div class="weekday">Mon</div>
+          <div class="weekday">Tue</div>
+          <div class="weekday">Wed</div>
+          <div class="weekday">Thu</div>
+          <div class="weekday">Fri</div>
+          <div class="weekday">Sat</div>
+        </div>
+        <div class="days-container">
+          <div class="day">
+            <span class="day-circle invisible-day"></span>
+          </div>
+          <div class="day">
+            <span class="day-circle invisible-day"></span>
+          </div>
+          <div class="day">
+            <span class="day-circle invisible-day"></span>
+          </div>
+          <div class="day">
+            <span class="day-circle invisible-day"></span>
+          </div>
+          <div class="day">
+            <span class="day-circle invisible-day"></span>
+          </div>
+          <div class="day">
+            <span class="day-circle invisible-day"></span>
+          </div>
+          <div class="day">
+            <span class="day-circle">1</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">2</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">3</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">4</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">5</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">6</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">7</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">8</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">9</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">10</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">11</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">12</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">13</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">14</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">15</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">16</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">17</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">18</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">19</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">20</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">21</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">22</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">23</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">24</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">25</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">26</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">27</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">28</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">29</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">30</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">31</span>
+          </div>
+        </div>
+      </div> 
+
+      <div class="months month-8">
+        <h3 class="month-title">August</h3>
+        <div class="weekdays-container">
+          <div class="weekday">Sun</div>
+          <div class="weekday">Mon</div>
+          <div class="weekday">Tue</div>
+          <div class="weekday">Wed</div>
+          <div class="weekday">Thu</div>
+          <div class="weekday">Fri</div>
+          <div class="weekday">Sat</div>
+        </div>
+        <div class="days-container">
+          <div class="day">
+            <span class="day-circle invisible-day"></span>
+          </div>
+          <div class="day">
+            <span class="day-circle invisible-day"></span>
+          </div>
+          <div class="day">
+            <span class="day-circle">1</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">2</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">3</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">4</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">5</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">6</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">7</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">8</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">9</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">10</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">11</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">12</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">13</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">14</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">15</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">16</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">17</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">18</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">19</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">20</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">21</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">22</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">23</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">24</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">25</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">26</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">27</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">28</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">29</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">30</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">31</span>
+          </div>
+        </div>
+      </div> 
+
+      <div class="months month-9">
+        <h3 class="month-title">September</h3>
+        <div class="weekdays-container">
+          <div class="weekday">Sun</div>
+          <div class="weekday">Mon</div>
+          <div class="weekday">Tue</div>
+          <div class="weekday">Wed</div>
+          <div class="weekday">Thu</div>
+          <div class="weekday">Fri</div>
+          <div class="weekday">Sat</div>
+        </div>
+        <div class="days-container">
+          <div class="day">
+            <span class="day-circle invisible-day"></span>
+          </div>
+          <div class="day">
+            <span class="day-circle invisible-day"></span>
+          </div>
+          <div class="day">
+            <span class="day-circle invisible-day"></span>
+          </div>
+          <div class="day">
+            <span class="day-circle invisible-day"></span>
+          </div>
+          <div class="day">
+            <span class="day-circle invisible-day"></span>
+          </div>
+          <div class="day">
+            <span class="day-circle">1</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">2</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">3</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">4</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">5</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">6</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">7</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">8</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">9</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">10</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">11</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">12</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">13</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">14</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">15</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">16</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">17</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">18</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">19</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">20</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">21</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">22</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">23</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">24</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">25</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">26</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">27</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">28</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">29</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">30</span>
+          </div>
+        </div>
+      </div> 
+
+      <div class="months month-10">
+        <h3 class="month-title">October</h3>
+        <div class="weekdays-container">
+          <div class="weekday">Sun</div>
+          <div class="weekday">Mon</div>
+          <div class="weekday">Tue</div>
+          <div class="weekday">Wed</div>
+          <div class="weekday">Thu</div>
+          <div class="weekday">Fri</div>
+          <div class="weekday">Sat</div>
+        </div>
+        <div class="days-container">
+          <div class="day">
+            <span class="day-circle">1</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">2</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">3</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">4</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">5</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">6</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">7</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">8</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">9</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">10</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">11</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">12</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">13</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">14</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">15</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">16</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">17</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">18</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">19</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">20</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">21</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">22</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">23</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">24</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">25</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">26</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">27</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">28</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">29</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">30</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">31</span>
+          </div>
+        </div>
+      </div> 
+
+      <div class="months month-11">
+        <h3 class="month-title">November</h3>
+        <div class="weekdays-container">
+          <div class="weekday">Sun</div>
+          <div class="weekday">Mon</div>
+          <div class="weekday">Tue</div>
+          <div class="weekday">Wed</div>
+          <div class="weekday">Thu</div>
+          <div class="weekday">Fri</div>
+          <div class="weekday">Sat</div>
+        </div>
+        <div class="days-container">
+          <div class="day">
+            <span class="day-circle invisible-day"></span>
+          </div>
+          <div class="day">
+            <span class="day-circle invisible-day"></span>
+          </div>
+          <div class="day">
+            <span class="day-circle invisible-day"></span>
+          </div>
+          <div class="day">
+            <span class="day-circle">1</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">2</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">3</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">4</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">5</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">6</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">7</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">8</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">9</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">10</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">11</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">12</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">13</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">14</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">15</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">16</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">17</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">18</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">19</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">20</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">21</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">22</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">23</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">24</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">25</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">26</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">27</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">28</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">29</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">30</span>
+          </div>
+        </div>
+      </div> 
+
+      <div class="months month-12">
+        <h3 class="month-title">December</h3>
+        <div class="weekdays-container">
+          <div class="weekday">Sun</div>
+          <div class="weekday">Mon</div>
+          <div class="weekday">Tue</div>
+          <div class="weekday">Wed</div>
+          <div class="weekday">Thu</div>
+          <div class="weekday">Fri</div>
+          <div class="weekday">Sat</div>
+        </div>
+        <div class="days-container">
+          <div class="day">
+            <span class="day-circle invisible-day"></span>
+          </div>
+          <div class="day">
+            <span class="day-circle invisible-day"></span>
+          </div>
+          <div class="day">
+            <span class="day-circle invisible-day"></span>
+          </div>
+          <div class="day">
+            <span class="day-circle invisible-day"></span>
+          </div>
+          <div class="day">
+            <span class="day-circle invisible-day"></span>
+          </div>
+          <div class="day">
+            <span class="day-circle">1</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">2</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">3</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">4</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">5</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">6</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">7</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">8</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">9</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">10</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">11</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">12</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">13</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">14</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">15</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">16</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">17</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">18</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">19</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">20</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">21</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">22</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">23</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">24</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">25</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">26</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">27</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">28</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">29</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">30</span>
+          </div>
+          <div class="day">
+            <span class="day-circle">30</span>
+          </div>
+        </div>
+      </div> 
+    </div>
+
+  </div>
+
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
